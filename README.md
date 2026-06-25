@@ -8,7 +8,7 @@ I build production-grade projects end to end — from data pipeline to deployed 
 
 ## Projects
 
-### [ALICE](https://github.com/nitescuale/alice)
+### [ALICE - Adaptive Learning & Interview Coaching Engine](https://github.com/nitescuale/alice)
 Local-first, cross-platform desktop RAG assistant.
 - **Stack:** Tauri 2, React/TypeScript, Python/FastAPI, ChromaDB, sentence-transformers, Ollama
 - Fully local LLM inference — no document or query ever leaves the device
