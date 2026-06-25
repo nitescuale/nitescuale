@@ -1,6 +1,6 @@
 # Alexandru Nitescu
 
-Data Science & Applied Mathematics engineer (graduating Oct 2026, CY Tech), currently a Data Analyst / Data Engineer apprentice at Exponens in Paris. Relocating to Singapore / East Asia from October 2026 — open to Data Scientist, AI, and ML Engineer roles requiring visa or Employment Pass sponsorship.
+Freshly Graduated Data Science & Applied Mathematics engineer, currently a Data Analyst / Data Engineer apprentice at Exponens in Paris. Relocating to Singapore / East Asia from October 2026 — open to Data Scientist, AI, and ML Engineer roles requiring visa or Employment Pass sponsorship.
 
 I build production-grade projects end to end — from data pipeline to deployed product — rather than isolated notebooks. The two repos below are the most representative examples.
 
@@ -15,11 +15,15 @@ Local-first, cross-platform desktop RAG assistant.
 - GPU-accelerated transcription (faster-whisper) for podcast/audio ingestion
 
 ### [Job Applier](https://github.com/nitescuale/job-apply-agent)
-Three-stage agentic Chrome extension for job search automation.
-- **Stack:** Python, Chrome Extension APIs, Google Gemini, python-docx, WeasyPrint, pytest
-- Cascading job scraping (JSON-LD → Open Graph → text fallback refined by Gemini)
-- ATS-tailored PDF CV generation (python-docx → Markdown → WeasyPrint)
+Chrome/Firefox extension + FastAPI backend orchestrating a multi-agent job application pipeline.
+- **Stack:** React, TypeScript, Vite/CRXJS, MV3 service worker, FastAPI, Google Gemini, pdfminer.six, SQLite
+- Cascading job scraper (JSON-LD JobPosting → Open Graph → text fallback) refined by Gemini
+- Deterministic offer/profile match scorer with LLM cascade
+- Section-aware DOCX-in-place CV tailoring → PDF (docx2pdf / LibreOffice)
+- Bilingual long-form cover letter generation
+- Deterministic ATS lint via pdfminer.six
 - React-safe DOM form auto-fill
+- SQLite-backed application tracking with a full-page dashboard
 - 41 pytest-covered tests
 
 ### [Fablify](https://fablify.app)
