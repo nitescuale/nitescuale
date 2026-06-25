@@ -9,10 +9,11 @@ I build production-grade projects end to end — from data pipeline to deployed 
 ## Projects
 
 ### [ALICE - Adaptive Learning & Interview Coaching Engine](https://github.com/nitescuale/alice)
-Local-first, cross-platform desktop RAG assistant.
-- **Stack:** Tauri 2, React/TypeScript, Python/FastAPI, ChromaDB, sentence-transformers, Ollama
-- Fully local LLM inference — no document or query ever leaves the device
-- GPU-accelerated transcription (faster-whisper) for podcast/audio ingestion
+Local-first, cross-platform desktop RAG assistant for studying and practicing technical interviews.
+- **Stack:** Tauri 2, React/TypeScript, Python/FastAPI, ChromaDB, sentence-transformers, Ollama, faster-whisper
+- Local LLM inference (Ollama) for RAG Q&A, quiz generation, and interview grading — chat and retrieval stay on-device
+- LLM-graded interview trainer over a curated data-science, AI & ML question bank (browse/search, FR↔EN)
+- Podcast & YouTube transcription — local GPU (faster-whisper) or optional cloud APIs (Groq, Deepgram)
 
 ### [Job Applier](https://github.com/nitescuale/job-apply-agent)
 Chrome/Firefox extension + FastAPI backend orchestrating a multi-agent job application pipeline.
